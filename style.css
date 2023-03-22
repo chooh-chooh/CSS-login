@@ -4,7 +4,6 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    cursor: default;
 }
 
 html {
@@ -42,18 +41,6 @@ body {
     flex-direction: column;
 }
 
-.icon__email {
-    position: relative;
-    top: 40%;
-    left: 5%;
-}
-
-.icon__password {
-    position: relative;
-    top: 40%;
-    left: 5%;
-}
-
 .form__label{
     font-family: 'Poppins';
     font-weight: 500;
@@ -61,6 +48,23 @@ body {
     line-height: 135%;
     color: #EAE6EF;
     margin-bottom: 12px;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+.icon__email {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.icon__password {
+    position: absolute;
+    top: 30%;
+    left: 5%;
 }
 
 .form__input {
@@ -76,7 +80,6 @@ body {
     line-height: 150%;
     padding-left: 56px;
     outline: none;
-    margin-bottom: 24px;
 }
 
 .form__input::placeholder {
@@ -90,7 +93,7 @@ body {
     background-color: #201C2D;
 }
 
-.form__input:focus   {
+.form__input:focus {
     border: 1px solid #7B14FF;
 }
 
