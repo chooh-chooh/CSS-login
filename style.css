@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url(images/BG.svg);
+    background-size: cover;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 386px;
+    padding-top: 178px;
+}
+
+.login__title{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: -0.2px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135%;
+    color: #EAE6EF;
+    margin-bottom: 12px;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+.icon__email {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.icon__password {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.form__input {
+    border: 1px solid #3F3B4C;
+    border-radius: 8px;
+    height: 48px;
+    width: 386px;
+    background: none;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    padding-left: 56px;
+    outline: none;
+}
+
+.form__input::placeholder {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%; 
+    color: #90859C;
+}
+
+.form__input:hover {
+    background-color: #201C2D;
+}
+
+.form__input:focus {
+    border: 1px solid #7B14FF;
+}
+
+.form__input:focus + .icon path{
+    fill: #7B14FF;
+}
+
+.form__submit {
+    width: 386px;
+    height: 48px;
+    background: #7B14FF;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 32px;
+}
+
+.form__submit:hover {
+    background-color: #8647E0;
+    cursor: default;
+    border: none;
+}
+
+.form__submit:active {
+    background-color: #4400A5;
+}
+
+.login-terms {
+    width: 382px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    color: #90859C;
+}
+
+.link {
+    color: #90859C;
+    cursor: pointer;
+}
